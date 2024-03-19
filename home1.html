@@ -13,73 +13,96 @@
             <div class="logo-nav">
                 <img src="logo.png"alt="H3 Music Player" height="30px"; width="30px";>
                 <h1 class="logo" style="font-size: 1.5rem; ">H3 Mu$iC Pl@yer</h1>
+                <form id="search-form" class="search-form">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button type="submit" id="search-button"><ion-icon name="search-outline"></ion-icon></button>
+                </form>
                 <nav>    
                     <ul>
                         <li><a href="home1.html" style="color:#2ac664;">Home</a></li>
                         <li><a href="login.html">Login</a></li>
                         <li><a href="shop.html">Pricing</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li><a href="library1.html">Library</a></li>
                         <li><img src="sun-icon.jpg" alt="" id="icon" style="height: 25px;cursor: pointer;"></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+    <div class="search-results" style="color: white;"></div>
+    <div class="playlist" >
+        <h2>My Playlist</h2>
+        <ul id="playlist-items">
+        </ul>
+    </div>
     <div class="container1">
         <div class="songlist">
             <h1><i><ion-icon name="musical-notes"></ion-icon>Hot Hits Punjabi<ion-icon name="musical-notes"></ion-icon></i></h1>
-            <a class="songs">
-                <a href="hass.html"><div class="songitem1">
+            <div class="songs">
+                <div class="song11" style="display: flex;">
+                    <a href="hass.html"><div class="songitem1">
                       <img src="hass.jpeg" alt="1">
                       <span>Hass Hass</span>
-                      <span class="songlistplay"><span class="timestamp">02.33<ion-icon name="play-circle-sharp"></ion-icon></span></span>
-                </div></a>
+                      <span class="songlistplay"><span class="timestamp">02.33<ion-icon name="play-circle-sharp"></ion-icon></span></span></div>
+                    </a>
+                    <button class="add-to-playlist-button" onclick="addToPlaylist('Hass Hass')">Add to Playlist</button>
+                </div>
+                <div class="song22" style="display: flex;">
                 <a href="love.html"><div class="songitem2">
                       <img src="love.jpeg" alt="1">
                       <span>One Love</span>
                       <span class="songlistplay"><span class="timestamp">02:39<ion-icon name="play-circle-sharp"></ion-icon></span></span>
-                </div></a>
+                </div></a> 
+                <button class="add-to-playlist-button" onclick="addToPlaylist('One Love')">Add to Playlist</button>
+            </div>
+            <div class="song33" style="display: flex;">
               <a href="softly.html"><div class="songitem3">
                     <img src="softly.jpeg" alt="1">
                     <span>Softly</span>
                     <span class="songlistplay"><span class="timestamp">02:35<ion-icon name="play-circle-sharp"></ion-icon></span></span>
                </div></a>
+               <button class="add-to-playlist-button" onclick="addToPlaylist('Softly')">Add to Playlist</button></div>
+               <div class="song33" style="display: flex;">
                <a href="Amor.html"><div class="songitem4">
                     <img src="amor.jpeg" alt="1">
                     <span>Mi Amor</span>
                     <span class="songlistplay"><span class="timestamp">03:23<ion-icon name="play-circle-sharp"></ion-icon></span></span> 
-                </div> </a>           
-                <a href="kinni.html"><div class="songitem5">
+                </div> </a><button class="add-to-playlist-button" onclick="addToPlaylist('Mi Amor')">Add to Playlist</button></div>
+                <div class="song44" style="display: flex;"><a href="kinni.html"><div class="songitem5">
                     <img src="kinni kinni.jpg" alt="1">
                     <span>Kinni Kinni</span>
                     <span class="songlistplay"><span class="timestamp">03.33<ion-icon name="play-circle-sharp"></ion-icon></span></span>
-                </div></a>
-                <a href="tareefan.html"><div class="songitem6">
+                </div></a><button class="add-to-playlist-button" onclick="addToPlaylist('Kinni Kinni')">Add to Playlist</button></div>
+                <div class="song55" style="display: flex;"><a href="tareefan.html"><div class="songitem6">
                        <img src="tareefan.jpg" alt="1">
                        <span>Tareefan</span>
                        <span class="songlistplay"><span class="timestamp">03:12<ion-icon name="play-circle-sharp"></ion-icon></span></span>
-               </div></a>
+               </div></a><button class="add-to-playlist-button" onclick="addToPlaylist('Kinni Kinni')">Add to Playlist</button></div></div>
+               
             </div>
         </div>
     </div>
+
+<div class="newcontainer">
     <h2 style="color: #fff; text-align: center;text-decoration: underline;">~THROWBACK~</h2>
     <p style="color: #fff; text-align: center; font-size: 1.5em;"></p>
     <div class="container2">
         <div class="box1">
             <div class="imgbox">
-             <img class="img" src="90.1.jpg" alt="1" style="height: 150px;width: 100%;">
+             <img class="img" src="nagada.jfif" alt="1" style="height: 22vh;width: 100%;">
             </div>
             <h3 style="text-align: center;">All Out 00's Hindi</h3>
             <p style="color: rgb(9, 9, 9);">Bollywood songs that ruled hearts in Y2K decade.</p>
-            <a href="00's.html"><button type="button" style="width: 100%; cursor: pointer;">Listen now</button></a>
+            <a href="00's.html"><button type="button" style="width: 100%; cursor: pointer;margin-top: 2px;">Listen now</button></a>
         </div>
         <div class="box2">
             <div class="imgbox">
-             <img class="img" src="90.2.jpg" alt="1" style="height: 10%;width: 100%;">
+             <img class="img" src="90.2.jpg" alt="1" style="height:20vh;width: 100%;">
             </div>
          <h3 style="text-align: center;">90s Swagger</h3>
          <p style="color: rgb(12, 11, 11);">Everything from cheesy floor-fillers to big beat bangers.</p>
-         <a href="90s.html"><button type="button" style="width: 100%; cursor: pointer;">Listen now</button></a>
+         <a href="90s.html"><button type="button" style="width: 100%; cursor: pointer;margin-top: 2px;">Listen now</button></a>
         </div>
         <div class="box3">
             <div class="imgbox">
@@ -87,10 +110,11 @@
             </div>
          <h3 style="text-align: center;">90s Love hits</h3>
          <p style="color: rgb(10, 9, 9);">Relive the '90s with these beautiful romantic hits'.</p>
-         <a href="lovehits.html"><button type="button" style="width: 100%; cursor: pointer;">Listen now</button></a>
+         <a href="lovehits.html"><button type="button" style="width: 100%; cursor: pointer;margin-top: 2px;">Listen now</button></a>
         </div>
     </div>  
 
+    </div>
     <h2 style="color: #fff; text-align: center;text-decoration: underline;">~BEST OF SONGS~</h2>
     
     <div class="container3">
@@ -100,7 +124,7 @@
             </div>
             <h3 style="text-align: center;">Hass Hass</h3><br>
             <p style="color: rgb(9, 9, 9);">DiljitXSia</p><br>
-            <a href="hass.html"><button type="button" style="width: 100%; cursor: pointer;">Listen now</button></a>
+            <a href="hass.html"><button type="button" style="width: 100%; cursor: pointer;margin-top: 2px;">Listen now</button></a>
         </div>
         <div class="box2">
             <div class="imgbox">
@@ -108,7 +132,7 @@
             </div>
             <h3 style="text-align: center;">Tareefan</h3><br>
             <p style="color: rgb(9, 9, 9);">Song by Desi Crew,Jordan Sandhu,and Mehar Vaani.</p>
-            <a href="tareefan.html"><button type="button" style="width: 100%; cursor: pointer;">Listen now</button></a>
+            <a href="tareefan.html"><button type="button" style="width: 100%; cursor: pointer;margin-top: 2px;">Listen now</button></a>
         </div>
         <div class="box3">
             <div class="imgbox">
@@ -116,7 +140,7 @@
             </div>
             <h3 style="text-align: center;">Kinni Kinni</h3><br>
             <p style="color: rgb(9, 9, 9);">Song by Diljit Dosanjh.</p><br>
-            <a href="kinni.html"><button type="button" style="width: 100%; cursor: pointer;">Listen now</button></a>
+            <a href="kinni.html"><button type="button" style="width: 100%; cursor: pointer;margin-top: 2px;">Listen now</button></a>
         </div>
     </div>  
     <h2 style="color: #fff; text-align: center;text-decoration: underline;">~BEST OF DEVOTIONAL SONGS~</h2>
@@ -126,8 +150,8 @@
              <img class="img" src="ramji.jfif"style="width: 100%; height:fit-content;">
             </div>
             <h3 style="text-align: center;">Raghupati Raghav Raja Ram</h3><br>
-            <p style="color: rgb(9, 9, 9);">Trisha Parui</p>
-            <a href="ram ji.html"><button type="button" style="width: 100%; cursor: pointer;">Listen now</button></a>
+            <p style="color: rgb(9, 9, 9);">Trisha Parui</p><br>
+            <a href="ram ji.html"><button type="button" style="width: 100%; cursor: pointer;margin-top: 2px;">Listen now</button></a>
         </div>
         <div class="box2">
             <div class="imgbox">
@@ -135,7 +159,7 @@
             </div>
             <h3 style="text-align: center;">Mera aapki Kripa se</h3><br>
             <p style="color: rgb(9, 9, 9);">Bhaiya Krishna Das Ji</p><br>
-            <a href="meraapki.html"><button type="button" style="width: 100%; cursor: pointer;">Listen now</button></a>
+            <a href="meraapki.html"><button type="button" style="width: 100%; cursor: pointer">Listen now</button></a>
         </div>
         <div class="box3">
             <div class="imgbox">
@@ -143,7 +167,7 @@
             </div>
             <h3 style="text-align: center;">Shree Hanuman Chalisa</h3><br>
             <p style="color: rgb(9, 9, 9);">Gulshan Kumar</p><br>
-            <a href="hanumanji.html"><button type="button" style="width: 100%; cursor: pointer;">Listen now</button></a>
+            <a href="hanumanji.html"><button type="button" style="width: 100%; cursor: pointer;margin-top: 2px;">Listen now</button></a>
         </div>
     </div>  
     <h2 style="color: #fff; text-align: center;text-decoration: underline;">~TRENDING PODCASTS~</h2>
@@ -154,15 +178,15 @@
             </div>
             <h3 style="text-align: center;">Rasraj Ji Maharaj</h3><br>
             <p style="color: rgb(9, 9, 9);">Hanuman Chalisa, Bajrang Baan, Sundarkand Paath, Bhakti & More | TRSH 232<p>
-            <a href="https://youtu.be/ZFb-W1PAcnI"><button type="button" style="width: 100%; cursor: pointer;">Listen now</button></a>
+            <a href="https://youtu.be/ZFb-W1PAcnI"><button type="button" style="width: 100%; cursor: pointer;margin-top: 2px;">Listen now</button></a>
         </div>
         <div class="box2">
             <div class="imgbox">
              <img class="img" src="podcast2.jfif" alt="1" style="height: 10%;width: 100%;">
             </div>
-         <h3 style="text-align: center;">Ashneer Grover</h3><br>
+         <h3 style="text-align: center;">Ashneer Grover</h3>
          <p style="color: rgb(12, 11, 11);">EASY Hacks To Make A Profitable Business | Shark Tank India | FO23 Raj Shamani</p>
-         <a href="https://youtu.be/nnEZVVC4Ap8"><button type="button" style="width: 100%; cursor: pointer;">Listen now</button></a>
+         <a href="https://youtu.be/nnEZVVC4Ap8"><button type="button" style="width: 100%; cursor: pointer;margin-top: 2px;">Listen now</button></a>
         </div>
         <div class="box3">
             <div class="imgbox">
@@ -170,45 +194,17 @@
             </div>
          <h3 style="text-align: center;">Jaya Kishori</h3><br>
          <p style="color: rgb(10, 9, 9);">Krishna, Mantra Aur Detachment - AJIO Presents TRSH 165</p>
-         <a href="https://youtu.be/EVcVr2asVzI"><button type="button" style="width: 100%; cursor: pointer;">Listen now</button></a>
-        </div>
-    </div>  
-    <h2 style="color: #fff; text-align: center;text-decoration: underline;">~YOUR FAVORITE ARTISTS~</h2>
-    <p style="color: #fff; text-align: center; font-size: 1.5em;"></p>
-    <div class="container2">
-        <div class="box1">
-            <div class="imgbox">
-             <img class="img" src="arijit.jpeg" alt="1" style="width: 100%; height: 100%;">
-            </div>
-            <h3 style="text-align: center;">Best of Arijit Singh</h3><br>
-            <p style="color: rgb(9, 9, 9);">Songs that are ruling hearts.</p>
-            <a href="arijit.html"><button type="button" style="width: 100%; cursor: pointer;">Listen now</button></a>
-        </div>
-        <div class="box2">
-            <div class="imgbox">
-             <img class="img" src="shreya.jpg" alt="1" style="height: 10%;width: 100%;">
-            </div>
-         <h3 style="text-align: center;">Shreya Ghoshal</h3><br>
-         <p style="color: rgb(12, 11, 11);">Everything from cheesy floor-fillers to big beat bangers.</p>
-         <a href="shreya.html"><button type="button" style="width: 100%; cursor: pointer;">Listen now</button></a>
-        </div>
-        <div class="box3">
-            <div class="imgbox">
-             <img class="img" src="diljit.home.jpg" alt="1" style="height: 100%;width: 100%;">
-            </div>
-         <h3 style="text-align: center;">Diljit Dosanjh</h3>
-         <p style="color: rgb(10, 9, 9);">Relive the '90s with her beautiful hits'.</p>
-         <a href="anuradha.html"><button type="button" style="width: 100%; cursor: pointer;">Listen now</button></a>
+         <a href="https://youtu.be/EVcVr2asVzI"><button type="button" style="width: 100%; cursor: pointer;margin-top: 2px;">Listen now</button></a>
         </div>
     </div>  
     <script>
         var themeIcon = document.getElementById("icon");
         var container1 = document.querySelector(".container1");
-        var container2 = document.querySelector(".container2")
+        
         themeIcon.addEventListener("click", function() {
             document.body.classList.toggle("dark-theme");
             container1.classList.toggle("light-mode");
-            container2.classList.toggle("new-mode");
+            
             if (document.body.classList.contains("dark-theme")) {
                 themeIcon.src = "../moon-icon.jpg";
                 document.body.style.backgroundColor = "white"; 
@@ -218,8 +214,78 @@
                 document.body.style.backgroundColor = "black"; 
             }
         });
-    </script>
-    
+
+        document.getElementById('search-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form submission
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            const elementsToSearch = document.querySelectorAll('h1, h3, p, span, a'); // Elements to search through
+            
+            let matchFound = false;
+
+            elementsToSearch.forEach(element => {
+                const text = element.textContent.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    element.style.backgroundColor = 'yellow'; // Highlight matching elements
+                    matchFound = true;
+                } else {
+                    element.style.backgroundColor = 'initial';
+                }
+            });
+
+            // Display "No results found" message if no matches were found
+            if (!matchFound) {
+                const searchResults = document.querySelector('.search-results');
+                searchResults.textContent = 'No results found.';
+            } else {
+                // Clear the "No results found" message if matches were found
+                const searchResults = document.querySelector('.search-results');
+                searchResults.textContent = '';
+            }
+        });
+        let playlist = [];
+
+// Function to add track to playlist
+function addToPlaylist(trackName) {
+    if (!playlist.includes(trackName)) {
+        playlist.push(trackName);
+        renderPlaylist();
+    }
+}
+
+// Function to remove track from playlist
+function removeFromPlaylist(trackName) {
+    const index = playlist.indexOf(trackName);
+    if (index !== -1) {
+        playlist.splice(index, 1);
+        renderPlaylist();
+    }
+}
+
+// Function to render playlist
+function renderPlaylist() {
+    const playlistItems = document.getElementById('playlist-items');
+    playlistItems.innerHTML = ''; // Clear existing items
+
+    playlist.forEach(track => {
+        const li = document.createElement('li');
+        li.textContent = track;
+
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Remove';
+        removeButton.addEventListener('click', () => {
+            removeFromPlaylist(track);
+        });
+
+        li.appendChild(removeButton);
+        playlistItems.appendChild(li);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Initial rendering of playlist
+    renderPlaylist();
+});
+    </script> 
     </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
