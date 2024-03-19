@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>H3 Mu$iC Pl@yer</title>
+        <link rel="icon" type="image"href="logo.png">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body
+            { background-color: black;
+            color: #fff;}
+            .shop{
+                text-align: center;
+                background-image: url(shopbg.avif);
+            }
+            .shop .box-container{
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+                gap: 2rem;
+            }
+            .shop .box-container .box{
+                
+                border-radius: .5rem;
+                box-shadow: var(--box-shadow);
+                position: relative;
+                overflow: hidden;
+                text-align: center;
+            }
+            button
+           {
+             width: 150px;
+             padding:10px 0;
+             text-align: center;
+             margin: 0px 0px;
+             border-radius: 20px;
+             font-weight: bold;
+             border: 3px solid rgb(62, 4, 62);
+             font-size: 15px;
+             cursor: pointer;
+             transition: 0.3s;
+             background-color: rgb(116, 20, 116);
+            }
+           button
+           {
+             text-decoration: none;
+             color: #fff;
+            }
+            button:hover
+            {
+              background-color: green;
+            }
+            .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+            header {
+        background-color: #333;
+        color: #fff;
+        padding: 18px 0px;
+    }
+    
+    .logo-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo {
+        font-size: 1.4rem;
+        margin-right: auto;
+    }
+    nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        color: #2ac664;
+    }
+    .box{
+        transition: 0.5s ease-in-out;
+        padding: 5px 0px 2px 0px;
+        border-radius: 30%;
+    }
+.box:hover{
+        background-color:rgba(139, 133, 133, 0.615);
+        border-radius: 30%;
+        cursor: pointer;
+    }
+    
+
+.shop h1 {
+  animation: colorchange 5s ease-in-out infinite;
+}
+@keyframes colorchange{
+    0%{color: #fff;}
+    50%{color: #333;}
+    100%{color: #fff;}
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo-nav">
+                    <img src="logo.png"alt="H3 Music Player" height="30px"; width="30px";>
+                    <h1 class="logo" style="font-size: 1.5rem; ">H3 Mu$iC Pl@yer</h1>
+                    <nav>    
+                        <ul>
+                            <li><a href="home1.html">Home</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="shop.html"style="color: #2ac664;">Pricing</a></li>
+                            <li><a href="contact.html" >Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="shop" id="shop">
+            <h1 class="heading" style="color: #fff; font-size: 70px; margin-top: 0px;text-decoration: underline ;">OUR SHOP</h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="arijit.jpeg" alt="" width="400px" height="250px">
+                        <div class="share">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-shopping cart"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2>ARIJIT SINGH</h2>
+                        <h3>All songs of our favorite singer Arijit singh are available.</h3>
+                        <H3>&#8377;800</H3>
+                        <a href="payment.html"><button type="button">BUY NOW</button></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="nimrat.jpg" alt="" width="400px" height="250px">
+                        <div class="share">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-shopping cart"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2>NIMRAT KHAIRA</h2>
+                        <h3>All songs of our favorite singer Nimrat Khaira are available.</h3>
+                        <H3>&#8377;500</H3>
+                        <a href="payment.html"><button type="button">BUY NOW</button></a>
+                    </div>
+                </div> <div class="box">
+                    <div class="image">
+                        <img src="guru.avif" alt="" width="400px" height="250px">
+                        <div class="share">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-shopping cart"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2>GURU RANDHAVA</h2>
+                        <h3>All songs of our favorite singer Guru Randhava are available.</h3>
+                        <H3>&#8377;500</H3>
+                        <a href="payment.html"><button type="button">BUY NOW</button></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="shreya.jpg" alt="" width="400px" height="250px">
+                        <div class="share">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-shopping cart"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2>SHREYA GHOSHAL</h2>
+                        <h3>All songs of our favorite singer Shreya Ghoshal are available.</h3>
+                        <H3>&#8377;600</H3>
+                        <a href="payment.html"><button type="button">BUY NOW</button></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="Karan.jpg" alt="" width="400px" height="250px">
+                        <div class="share">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-shopping cart"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2>KARAN AUJHLA</h2>
+                        <h3>All songs of our favorite singer Karan Aujhla are available.</h3>
+                        <H3>&#8377;700</H3>
+                        <a href="payment.html"><button type="button">BUY NOW</button></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="edsheeran.jpg" alt="" width="400px" height="250px">
+                        <div class="share">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-shopping cart"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2>ED SHEERAN</h2>
+                        <h3>All songs of our favorite singer Ed Sheeran are available.</h3>
+                        <H3>&#8377;700</H3>
+                        <a href="payment.html"><button type="button">BUY NOW</button></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="diljit.jpeg" alt="" width="400px" height="250px">
+                        <div class="share">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-shopping cart"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2>DILJIT DONSANJH</h2>
+                        <h3>All songs of our favorite singer Diljit Dosanjh are available.</h3>
+                        <H3>&#8377;800</H3>
+                        <a href="payment.html"><button type="button">BUY NOW</button></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="neha.jpg" alt="" width="400px" height="250px">
+                        <div class="share">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-shopping cart"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2>NEHA KAKKAR</h2>
+                        <h3>All songs of our favorite singer Neha Kakkar are available.</h3>
+                        <H3>&#8377;600</H3>
+                        <a href="payment.html"><button type="button">BUY NOW</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

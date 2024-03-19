@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H3 Mu$iC Pl@yer</title>
+    <link rel="icon" type="image"href="logo.png">
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            background-image: url(jess-bailey-q10VITrVYUM-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .row
+        {
+            display: flex;
+            padding: 2em 1em;
+            text-align: center;
+        }
+        @media (max-width:1024px) 
+        {
+            .row
+        {
+            display: flex;
+            padding: 2em 1em;
+            text-align: center;
+            flex-direction: column;
+        }  
+        }
+        .column
+        {
+            width: 100%;
+            border: 1px solid rgb(21, 20, 20);
+            padding: 0.4em 0;
+        }
+        .row h1
+        {
+          width: 100%;
+          text-align: center;
+          font-size: 3.5em;
+          color:rgb(7, 7, 7);
+          animation: letterSpacingAnim 2s infinite alternate ; 
+        }
+        @keyframes letterSpacingAnim {
+        from {
+            letter-spacing: 0; 
+        }
+        to {
+            letter-spacing: 40px; 
+        }
+    }
+        .card
+        {
+            box-shadow: 0 0 2.2em rgba(255, 254, 255, 0.15);
+            padding: 1.0em 01em;
+            border-radius: 0.6em;
+            cursor: pointer;
+            color:black;
+            transition:0.5s;
+        }
+        .card:hover
+        {
+            background: linear-gradient(#6045ea, #8567f7);
+            color: black;
+            font-size: 17px;
+        }
+        .card:hover .img-container
+        {
+            transform: scale(1.2);
+        }
+        .img-container
+        {
+            width: 45%;
+            height: 20%;
+            background-color:#fff;
+            padding: 0.5em; 
+            border-radius: 50%; 
+            margin: 0 auto 2em auto;
+        }
+        @media screen and (min-width:768px) 
+        {
+         .section{
+            padding: 1em 5em;
+         } 
+        }
+        @media screen and (min-width:992px)
+        {      
+         .section{
+              padding: 1em;
+            }
+         .card{
+            padding: 1.2emem 1em;
+         }
+         .column
+         {
+           flex:0 0 33.33%;
+           max-width: 33.33%;
+           padding:  1em;
+         }
+        }
+        .container {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 18px 0px;
+    }
+    
+    .logo-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo {
+        font-size: 1.4rem;
+        margin-right: auto;
+    }
+    nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        color: #2ac664;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-nav">
+                <img src="logo.png"alt="H3 Music Player" height="30px"; width="30px";>
+                <h1 class="logo" style="font-size: 1.5rem; ">H3 Mu$iC Pl@yer</h1>
+                <nav>    
+                    <ul>
+                        <li><a href="home1.html">Home</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="shop.html">Pricing</a></li>
+                        <li><a href="contact.html" style="color: #2ac664;">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="row">
+          <h1 style="text-decoration: underline;">OUR TEAM</h1>
+        </div>
+       <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                       <img src="team1.jpg" style="width: 100%;border-radius: 50%; height: 100%;">
+                    </div>
+                    <h3 style="font-weight: 500;">Hemant Sardana</h3>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                     <img src="team2.jpg" style="width: 100%;border-radius: 50%; height: 100%;">
+                    </div>
+                    <h3 style=" font-weight: 500;">Himanshi Jolly</h3>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                     <img src="team3.jpg" style="width: 100%;border-radius: 50%; height: 100%;">
+                    </div>
+                    <h3 style=" font-weight: 500;">Harshvardhan Tyagi</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="contact">
+       <h1 style="background-color: #ffffffaa;"> Contact Us</h1>
+  <p style="background-color: rgba(156, 81, 81, 0.765);color: #fff;font-size: 20px;"><i>We're here to assist you with any inquiries, feedback, or support requests you may have. Whether you're a user experiencing technical 
+  difficulties, a business partner interested in collaboration opportunities, or a music enthusiast with questions about our platform, feel
+  free to get in touch with us. Your satisfaction and experience are our top priorities, and we strive to provide prompt and helpful 
+  assistance.</i></p><br>
+ <h1 style="background-color: #ffffffb3;">How to Reach Us</h1>
+ <p style="background-color: rgba(156, 81, 81, 0.765);color: #fff;font-size: 20px;"><i>You can contact us through the E-mail provided below. Simply email us your issue or message, and we'll get back to you as
+ soon as possible. Alternatively, you can reach out to us via  phone using the contact details listed on this page.</i></p>
+ <h1 style="background-color: #ffffffaa;">Emails:-</h1><h3 style="background-color: rgba(156, 81, 81, 0.765);color: #fff;font-weight: 200;"><i>himanshijolly3@gmail.com</i><br><i>sardanahemant2416@gmail.com</i><br><i>tyagiharshvardhan29@gmail.com</i></h2>
+ <h1 style="background-color: #ffffffaa;">Phone:-</h1><h3 style="color: #fff;background-color: rgba(156, 81, 81, 0.765);"><i>9468368680~Himanshi Jolly</i><br><i>9416940665~Hemant Sardana</i><br>
+ <i>9780322328~Harshvardhan Tyagi</i></h3><br>
+<h1 style="background-color: #ffffffaa;">Our Commitment</h1>
+<p style="background-color: rgba(156,81,81,0.765);color:#fff;font-size: 20px;"><i>At H3 Mu$iC Pl@yer, we're dedicated to delivering an exceptional user experience and fostering meaningful connections with our users and partners. Your feedback and input are invaluable to us as we continuously improve 
+ and evolve our platform. Rest assured that your messages will be handled with care and professionalism by our team.</i></p>
+<h2>Thank you for choosing H3 Mu$iC Pl@yer. We look forward to hearing from you!
+    <form id="feedbackForm" onsubmit="window.alert('Feedback saved successfully.')"><input type="text" placeholder="feedback" id="feedback" style="width: 50%;" required></input>
+    <button type="submit">Submit</button></form></h2>
+    </div>
+</body>
+</html>

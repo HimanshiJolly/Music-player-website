@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H3 Mu$iC Pl@yer</title>
+    <link rel="icon" type="image"href="logo.png">
+ <html lang="en">
+ <head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            background-image: url(paymentbg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        /* Adjusted container width for responsiveness */
+.container{
+    width: 90%; /* Changed from fixed vw value to percentage */
+    max-width: 600px; /* Added max-width to prevent container from getting too wide on large screens */
+    margin: 30px auto; /* Centered the container horizontally */
+    padding: 20px;
+}
+
+/* Added media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjusted width for smaller screens */
+    }
+}
+
+        .container h1{
+            text-align: center;
+            font-size: 50px;
+        }
+        
+        .first-row{
+             display: flex;
+        }
+        
+        .owner{
+            width: 100%;
+            margin-right: 40px;
+        }
+        
+        .input-field{
+            border: 1px solid #999;
+        }
+        
+        .input-field input{
+            width: 100%;
+            border:none;
+            outline: none;
+            padding: 10px;
+        }
+        
+        .selection{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .selection select{
+            padding: 10px 20px;
+        }
+        
+        button{
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 18px;
+            transition: 0.5s;
+            width:100%;
+            cursor: pointer;
+        }
+        
+        button:hover{
+            background-color: dodgerblue;
+            cursor: pointer;
+        }
+        
+        .cards img{
+            width: 100px;
+        }
+        .container1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;}
+        header {
+        background-color: #333;
+        color: #fff;
+        padding: 18px 0px;
+    }
+    
+    .logo-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo {
+        font-size: 1.4rem;
+        margin-right: auto;
+    }
+    nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        color: #2ac664;
+    }
+    @keyframes colorChange {
+            0% { color:rgba(10, 10, 10, 0.526); } 
+            10%{color:rgb(98, 94, 91);}
+            20%{color:rgba(2, 2, 2, 0.545);}
+            30%{color:rgb(43, 41, 39);}
+            50% { color: rgb(5, 5, 5); } 
+            60%{color:rgb(39, 13, 63);}
+            70%{color:rgb(2, 2, 2);}
+            80%{color:rgb(43, 41, 39);}
+            90%{color:rgb(2, 2, 2);}
+            100% { color: rgb(51, 51, 53); } 
+        }
+
+        .color-change {
+            animation: colorChange 2s infinite ease-in-out; 
+        }
+    </style>
+   
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <div class="logo-nav">
+                <img src="logo.png"alt="H3 Music Player" height="30px"; width="30px";>
+                <h1 class="logo" style="font-size: 1.5rem; ">H3 Mu$iC Pl@yer</h1>
+                <nav>    
+                    <ul>
+                        <li><a href="home1.html">Home</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="shop.html"style="color: #2ac664;">Pricing</a></li>
+                        <li><a href="contact.html" >Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <form onsubmit="window.alert('Payment done successfully.')">
+        <h1 class="color-change">Confirm Your Payment</h1>
+        <div class="first-row">
+            <div class="owner">
+                <h3>Card Holder Name</h3>
+                <div class="input-field">
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field">
+                    <input type="password"pattern="[0-9]{3}" minlength="3" maxlength="3" required>
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Card Number</h3>
+                <div class="input-field">
+                    <input type="text" pattern="[0-9]{12}" minlength="12" maxlength="12" required>
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <h3>Expiry</h3>
+            <div class="selection">
+                <div class="date">
+                    <select name="months" id="months">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                      </select>
+                      <select name="years" id="years">
+                        <option value="2020">2030</option>
+                        <option value="2019">2029</option>
+                        <option value="2018">2028</option>
+                        <option value="2017">2027</option>
+                        <option value="2016">2026</option>
+                        <option value="2015">2025</option>
+                        <option value="2015">2024</option>
+                      </select>
+                </div>
+                <div class="cards">
+                    <input type="radio"name="radio"required><img src="mc.png" alt="">
+                    <input type="radio" name="radio"><img src="vi.png" alt="">
+                    <input type="radio" name="radio"><img src="pp.png" alt="">
+                </div>
+            </div>    
+        </div>
+        <button type="submit">Confirm</button>
+    </div>
+</form>
+</body>
+</html>

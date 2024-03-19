@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 88.5vh;
+    background:url(forgot.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: animateBg 5s linear infinite;
+}
+@keyframes animateBg{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.reset-box{
+    position: relative;
+    width: 400px;
+    height: 390px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+h1{font-size: 2.5em;
+color:#fff;
+text-align: center;
+font-weight:bold;
+}
+.input-box{
+    position: relative;
+    width: 310px;
+    margin:30px 0;
+    border-bottom: 2px solid #fff;
+}
+.input-box label{
+    position: absolute;
+    top:40%;
+    left:5px;
+    transform:translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    transition: .5s;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    margin-top:5%;
+    margin-bottom: -6%;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+button{width: 100%;
+height: 40px;
+background: #fff;
+border: none;
+outline: none;
+border-radius: 40px;
+cursor:pointer;
+font-size: 1em;
+color: #000;
+font-weight: 500;}
+button a{
+    text-decoration: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+        header {
+    background-color: #333;
+    color: #fff;
+    padding: 18px 0px;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.4rem;
+    margin-right: auto;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2ac664;
+}
+button:hover{
+    background-color: blue;
+}

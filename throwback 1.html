@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H3 Mu$iC Pl@yer</title>
+    <link rel="icon" type="image"href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+            *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body
+{
+background-color: rgb(3, 3, 3);
+color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px 0px 5px;
+    background-color: white;
+    color: black;
+    height: 50px;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    list-style-type: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav ul li a
+{
+ text-decoration: none;
+ color: black;
+}
+.nav ul li a:hover{
+    text-decoration: underline;
+    color: rgb(116, 85, 85);   
+}
+.text-wrap
+{ display: flex;
+  justify-content: flex-start ;
+  background: rgb(244, 244, 244);
+  overflow: hidden;
+}
+h3{
+    color: black;
+    white-space:nowrap;
+    padding: 0 4rem;
+    letter-spacing: 0.7px ;
+    animation: move-rtl 6000ms linear infinite;
+}
+@keyframes move-rtl {
+    0%
+    {
+        transform: translateX(0);
+    }
+    100%
+    {
+        transform: translateX(-100%);
+    }
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+         <img src="logo.png"alt="H3 Music Player" height="48px"; width="50px";>
+        </div>
+        <div class="nav">
+         <ul>
+             <li id="#home" style="background-color: rgb(165, 162, 162);"><a href="home1.html">HOME</a></li>
+             <li id="#library"><a href="library.html">LIBRARY</a></li>
+             <li id="artist"><a href="artist.html">ARTIST</a></li>
+             <li><a href="login.html">LOGIN</a></li>
+             <li id="#shop"><a href="shop.html">SHOP</a></li>
+         </ul>
+        </div>
+    </header>
+    <h1 style="font-size: 80px;text-align: center;text-decoration:;">All Out 00's Hindi</h1>
+<div class="text-wrap">
+        <h3>Bollywood songs that ruled hearts in the Y2K decade.</h3>
+        <h3>Bollywood songs that ruled hearts in the Y2K decade.</h3>
+        <h3>Bollywood songs that ruled hearts in the Y2K decade.</h3>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="nagada.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"style="color:black;font-weight:40px"><b>Nagada Nagada</b></h5>
+                      <p class="card-text"style="color:black">03.48</p>
+                      <a href="nagada.html" class="btn btn-primary">Play</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>

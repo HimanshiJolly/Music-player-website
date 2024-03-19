@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H3 Mu$iC Pl@yer</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="image"href="logo.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-nav">
+                <img src="logo.png"alt="H3 Music Player" height="30px"; width="30px";>
+                <h1 class="logo" style="font-size: 1.5rem; ">H3 Mu$iC Pl@yer</h1>
+                <nav>    
+                    <ul>
+                        <li><a href="home1.html">Home</a></li>
+                        <li><a href="login.html"style="color: #2ac664;">Login</a></li>
+                        <li><a href="shop.html">Pricing</a></li>
+                        <li><a href="contact.html" >Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section>
+    <div class="login-box" >
+            <form onsubmit="window.alert('You have logged in to the app successfully.')" action="home1.html">
+             <h1>Login</h1>
+                <div class="input-box">
+                  <span class="icon"><ion-icon name="mail-sharp"></ion-icon></span>
+                 <input type="email"  required>
+                 <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-sharp"></ion-icon></span>
+                    <input type="password" minlength="8" required >
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                  <label><input type="checkbox">Remember me</label>
+                  <a href="forgot.html">Forgot Password?</a>
+                </div>
+                <button type="submit">Login</button>
+                <div class="register-link">
+                 <p>Don't have an account?<a href="register.html">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

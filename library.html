@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            header{
+                display: flex;
+                justify-content: space-between;
+                padding: 0px -10px 0px 5px;
+                background-color: white;
+                height: 50px;
+                width: 100%;
+            }
+            
+            .nav{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .nav ul {
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                justify-content: space-between;
+                list-style-type: none;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            .nav ul li a
+            {
+             text-decoration: none;
+             color: black;
+            }
+            .nav ul li a:hover{
+                text-decoration: underline;
+                color: rgb(116, 85, 85);   
+            }
+        body{
+        
+            margin:0;
+            padding:0;
+            background-color: burlywood;
+            color: #fff !important;
+        }
+        .music-container{
+            font-family: sans-serif;
+            width: 350px;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            display: block;
+            position: absolute;
+            background-color: black;
+        }
+        .music-header{
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid #555;
+        }
+        .music-header .fa-angle-left{
+            float: left;
+            margin-top: 15px;
+            margin-left: 10px;
+            cursor:pointer;
+        }
+        .music-header .fa-search{
+            float: right;
+            margin-top: 15px;
+            margin-left: 10px;
+            cursor:pointer;
+        }
+        .music-header .title{
+            width: 250px;
+            height: 30px;
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 30px;
+            padding-left: 18px;
+            text-align: center;
+        }
+        .music-playlist{
+            width: 100%;
+            height: 500px;
+        }
+        .menu{
+            width: 275px;
+            
+            margin: 15px 30px auto;
+            border-radius: 10px;
+            border: 1px solid #fff;
+        }
+        .menu ul{
+            font: size 10px;
+            padding: initial;
+        }
+        .menu ul li{
+            list-style-type: none;
+            display: inline-block;
+            border-right: 1px solid #fff;
+        }
+        .menu ul li a{
+            color:#fff;
+            padding: 5px 5px ;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+        .menu ul li :last-child{
+            border-right: none;
+        }
+        .music-box{
+            width: 100%;
+            height: 410px;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+        .music-box::-webkit-scrollbaar{
+            width: 0px;
+            background: transparent;
+        }
+        .music-box .fa-ellipsis-v{
+            margin-right: 10px;
+            margin-top: 22px;
+            font-weight: normal;
+            color: white;
+            cursor:pointer;
+
+        }
+        .music-img{
+            width: 100%;
+            height: 50px;
+            display: flex;
+        }
+        .music-img{
+            width: 50px;
+            height: 50px;
+        }
+        .music-img img{
+            width: 40px;
+            height: 40px;
+            margin: 2px 5px;
+            padding: 1px;
+        }
+        .music-name{
+            width: 300px;
+            padding: 0 5px;
+            height: 50px;
+            margin: 50px ;
+            margin-top: -118px;
+        }
+        .music-name h6{
+            margin-top: 7px;
+            font-size: 15px;
+            font-weight: normal;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            line-height: 2px;
+        }
+        .music-name p{
+            color: white;
+            font-size: 10px;
+            font-weight: normal;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            line-height: 1px;
+        }
+        hr{
+            width: 95%;
+            margin-top: 4px !important;
+            margin-bottom: 6px !important;
+        }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+             <img src="logo.png"alt="H3 Music Player" height="48px"; width="50px";>
+            </div>
+            <div class="nav">
+             <ul>
+                 <li id="#home"><a href="home1.html">HOME</a></li>
+                 <li id="#library"><a href="library.html"style="background-color:grey">LIBRARY</a></li>
+                 <li id="artist"><a href="artist.html">ARTIST</a></li>
+                 <li><a href="login.html">LOGIN</a></li>
+                 <li id="#shop"><a href="shop.html">SHOP</a></li>
+             </ul>
+            </div>
+        </header>
+        <div class="music-container">
+            <div class="music-header">
+                <i class=""fa fa-angle-left></i>
+                <div class="title"><h3>LIBRARY</h3></div>
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="music-playlist">
+                <div class="music-menu text-center"></div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Songs</a></li>
+                            <li><a href="#">Albums</a></li>
+                            <li><a href="artist.html">Artists</a></li>
+                            <li><a href="#">Genres</a></li>
+                        </ul>
+                    </div>
+                    <div class="music-box">
+                        <div class="music-info">
+                            <a href="koi.html" class="music-img">
+                                <img src="koi.jfif">
+                            </a>
+                            <div class="music-name">
+                                <h6>KOI MIL GAYA</h6>
+                                
+                                
+                            </div>
+                            <i class="fa fa-ellipsis-v"></i>
+                        </div><hr>
+                        <div class="music-info">
+                            <a href="kinni.html" class="music-img">
+                                <img src="kinni kinni.jpg">
+                            </a>
+                            <div class="music-name">
+                                <h6>KOI MIL GAYA</h6>
+                                <p>UDIT NARAYANA & ALKA YAGNIK</p>
+                            </div>
+                            <i class="fa fa-ellipsis-v"></i>
+                        </div><hr>
+                        <div class="music-info">
+                            <a href="love.html"class="music-img">
+                                <img src="love.jpeg">
+                            </a>
+                            <div class="music-name">
+                                <h6>KINNI KINNI</h6>
+                                <p>DILJIT DOSANJH</p>
+                            </div>
+                            <i class="fa fa-ellipsis-v"></i>
+                        </div><hr>
+                        <div class="music-info">
+                            <a href="haule.html" class="music-img">
+                                <img src="haule.jfif">
+                            </a>
+                            <div class="music-name">
+                                <h6>ONE LOVE</h6>
+                                <p>SHUBH</p>
+                            </div>
+                            <i class="fa fa-ellipsis-v"></i>
+                        </div><hr>
+                        <div class="music-info">
+                            <a href="hass.html" class="music-img">
+                                <img src="hass.jpeg">
+                            </a>
+                            <div class="music-name">
+                                <h6>HAULE HAULE</h6>
+                                <p>SUKHWINDER SINGH</p>
+                            </div>
+                            <i class="fa fa-ellipsis-v"></i>
+                        </div><hr>
+                        <div class="music-info">
+                            <a href="haan.html" class="music-img">
+                                <img src="haan.jfif">
+                            </a>
+                            <div class="music-name">
+                                <h6>HASS HASS</h6>
+                                <p>DILJIT DOSANJH & SIYA</p>
+                            </div>
+                            <i class="fa fa-ellipsis-v"></i>
+                        </div><hr>
+                        <div class="music-info">
+                            <a href="Amor.html" class="music-img">
+                                <img src="amor.jpeg">
+                            </a>
+                            <div class="music-name">
+                                <h6>HAAN TU HAI</h6>
+                                <p>JANNAT</p>
+                            </div>
+                            <i class="fa fa-ellipsis-v"></i>
+                        </div><hr>
+                        <div class="music-info">
+                            <a href="aadat.html" class="music-img">
+                                <img src="aadat.jfif">
+                            </a>
+                            <div class="music-name">
+                                <h6>AMOR</h6>
+                                <p>SHARN & PAUL</p>
+                            </div>
+                            <i class="fa fa-ellipsis-v"></i>
+                        </div><hr>
+                        <div class="music-info">
+                            <a href="muqabala.html" class="music-img">
+                                <img src="muqabala.jfif">
+                            </a>
+                            <div class="music-name">
+                                <h6>AADAT</h6>
+                                <p>ATIF ASLAM</p>
+                            </div>
+                            <i class="fa fa-ellipsis-v"></i>
+                        </div><hr>
+                        <div class="music-info">
+                            <div class="music-img">
+                               
+                            </div>
+                            <div class="music-name">
+                                <h6>MUQABALA</h6>
+                                <p>PARAMPARA THAKUR </p>
+                            </div>
+                           
+                        
+                    </div>
+              
+            </div>
+            <div class="music-play">
+                <div class="#">
+                    <a href="play.html">
+                </div>
+                <div class="play-controls">
+                    <div class="controls">
+                        <a href="play.html"></a>
+              </div>
+            </div>
+            </div>
+    </body>
+</html>

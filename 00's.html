@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H3 Mu$iC Pl@yer</title>
+    <link rel="icon" type="image"href="logo.png">
+    <header>
+      <div class="logo">
+       <img src="logo.png"alt="H3 Music Player" height="48px"; width="50px";>
+      </div>
+      <div class="nav">
+       <ul>
+           <li id="#home" style="background-color: rgb(165, 162, 162);"><a href="home1.html">HOME</a></li>
+           <li id="#library"><a href="library.html">LIBRARY</a></li>
+           <li id="artist"><a href="artist.html">ARTIST</a></li>
+           <li><a href="login.html">LOGIN</a></li>
+           <li id="#shop"><a href="shop.html">SHOP</a></li>
+       </ul>
+      </div>
+  </header>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+      }
+      header{
+     display: flex;
+     justify-content: space-between;
+     padding: 0px 100px 0px 5px;
+    background-color: white;
+    height: 45px;
+    width: 91.6%;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: space-between;
+    list-style-type: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav ul li a
+{
+ text-decoration: none;
+ color: black;
+}
+.nav ul li a:hover{
+    text-decoration: underline;
+    color: rgb(116, 85, 85);   
+}
+
+        body{
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+      .container1{
+         width: 100.5%;
+         margin-top: -8px;
+         background:linear-gradient(rgb(194, 37, 34),rgb(186, 62, 60),rgb(49, 35, 31));
+         margin-left: -6px;
+         display: flex;
+         flex-direction: row;
+         flex-wrap:wrap;
+        }
+        .container1 .img{
+          width: 300px;
+        }
+       
+        .text-wrap
+{ display: flex;
+  justify-content: flex-start ;
+  background: linear-gradient(rgb(62, 53, 50),rgb(219, 100, 98));
+  overflow: hidden;
+}
+       .container1 p{
+          color: black;
+    white-space:nowrap;
+    padding: 0 4rem;
+    letter-spacing: 0.7px ;
+    animation: move-rtl 6000ms linear infinite;
+}
+@keyframes move-rtl {
+    0%
+    {
+        transform: translateX(0);
+    }
+    100%
+    {
+        transform: translateX(-100%);
+    }
+        }
+        .cards{
+          width: 200px;
+          background:linear-gradient(rgb(99, 75, 69),rgb(194, 103, 102));
+          border-radius: 10px;
+          margin:10px;
+          display: inline-block;
+          padding: 10px;
+        }
+        .cards:hover{
+          box-shadow: 4px 4 px 7px white;
+          transition: 0.5s;
+        } 
+        .image img
+        {
+          width: 100%;
+          border-top-right-radius:10px;
+          border-top-left-radius: 10px;
+        }
+        .title
+        {
+          text-align: center;
+          padding: 5px;
+        }
+        .description{
+          padding: 5px;
+          text-align: center;
+        }
+        button
+        {margin-bottom: 15px;
+        margin-top: 15px;
+        width: 100px;
+       background-color: #fff;
+       border: 1px solid black;
+       padding: 10px;
+       border-radius: 15px;
+       cursor: pointer;}
+       button:hover{
+        background-color: black;
+        color: #fff;
+        transition: 1s;
+       }
+       </style>
+</head>
+<body>
+  <div class="container1">
+   <img src="90.1.jpg" alt="error" class="img">
+    <h1 style="font-size: 90px;">All Out 00's Hindi</h1>
+     <div class="text-wrap">
+        <p style="color: rgb(242, 234, 234)">Bollywood songs that ruled hearts in tha Y2K decade.Cover -Jab We Met</p>
+        <p style="color: rgb(200, 195, 195)">Bollywood songs that ruled hearts in tha Y2K decade.Cover -Jab We Met</p>
+        <p style="color: rgb(232, 219, 219)">Bollywood songs that ruled hearts in tha Y2K decade.Cover -Jab We Met</p>
+       </div>
+    </div>
+    <div class="main">
+   <div class="cards">
+    <div class="image"><img src="nagada2.jfif"></div>
+    <div class="title"><h3>Nagada Nagada</h3></div>
+    <div class="description">
+      <p>Song by Javed Ali and Sonu Nigam</p>
+      <h5>03.48</h5>
+      <a href="nagada.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="image"><img src="ucha2.jpg"></div>
+    <div class="title"><h3>Ucha Lamba Kad</h3></div>
+    <div class="description">
+      <p>Song by Anand Raaj Anand</p>
+      <h5>04.40</h5>
+      <a href="ucha.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="image"><img src="soni2.jpg"></div>
+    <div class="title"><h3>Soni De Nakhre</h3></div>
+    <div class="description">
+      <p>Song by Labh Janjua, Sajid–Wajid, and Sneha Pant</p>
+      <h5>04.21</h5>
+      <a href="soni.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="image"><img src="haan2.jpg"></div>
+    <div class="title"><h3>Haan Tu Hai</h3></div>
+    <div class="description">
+      <p>Song by Pritam,KK</p>
+      <h5>05.25</h5>
+      <a href="haan.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="image"><img src="ajab2.jpg"></div>
+    <div class="title"><h3>Ajab Si</h3></div>
+    <div class="description">
+      <p>Song by KK</p>
+      <h5>04:02</h5>
+      <a href="Ajab.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="image"><img src="no entry2.jpg"></div>
+    <div class="title"><h3>No Entry:Ishq Di Galli vich</h3></div>
+    <div class="description">
+      <p>Song by Alisha Chinai and Sonu Nigam</p>
+      <h5>06.09</h5>
+      <a href="noentry.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="image"><img src="teri.jpg"></div>
+    <div class="title"><h2>Teri Ore</h2></div>
+    <div class="description">
+      <p>Song by Rahat Fateh Ali Khan and Shreya Ghoshal</p>
+      <h5>05.37</h5>
+      <a href="teri.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="image"><img src="guitar.jpg"></div>
+    <div class="title"><h3>Dil Mein Baji Guitar</h3></div>
+    <div class="description">
+      <p>Song by Mika Singh,Pritam</p>
+      <h5>04:25</h5>
+      <a href="guitar.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="image"><img src="tu aashiqi.jpg"></div>
+    <div class="title"><h3>Tu Aashiqui Hai</h3></div>
+    <div class="description">
+      <p>Song by Alisha Chinai and Sonu Nigam</p>
+      <h5>06.10</h5>
+      <a href="tu aashiqui.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="image"><img src="teri.jpg"></div>
+    <div class="title"><h2>Jee Karda</h2></div>
+    <div class="description">
+      <p>Song by Labh Janjua, Pritam Chakraborty, and Suzanne D'Mello</p>
+      <h5>04.49</h5>
+      <a href="jee.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  </div>
+</body>

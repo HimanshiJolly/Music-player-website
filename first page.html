@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Music Player</title>
+    <style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    
+    .welcome-page {
+        position: relative;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    
+    .content {
+        text-align: center;
+        color: black;
+        z-index: 1;
+    }
+    
+    h1 {
+        font-size: 3.8rem;
+    }
+    .letter-spacing-animation {
+        font-family: Arial, sans-serif;
+        animation: letterSpacingAnim 2s infinite alternate ; 
+    }
+
+    @keyframes letterSpacingAnim {
+        from {
+            letter-spacing: 0;
+        }
+        to {
+            letter-spacing: 10px;
+        }
+    }
+    p {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    @keyframes colorChange {
+            0% { color:rgb(10, 10, 10); } 
+            10%{color:rgb(52, 50, 48);}
+            20%{color:rgb(2, 2, 2);}
+            30%{color:rgb(43, 41, 39);}
+            50% { color: rgb(5, 5, 5); } 
+            60%{color:rgb(52, 50, 48);}
+            70%{color:rgb(2, 2, 2);}
+            80%{color:rgb(43, 41, 39);}
+            90%{color:rgb(2, 2, 2);}
+            100% { color: rgb(51, 51, 53); } 
+        }
+
+        .color-change {
+            animation: colorChange 2s infinite ease-in-out; 
+        }
+    .btn {
+        display: inline-block;
+        background-color: #fff;
+        color: #3498db;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .btn:hover {
+        background-color: #3498db;
+        color: #fff;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 0px 0px;
+    }
+    
+    .logo-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo {
+        font-size: 1.4rem;
+        margin-right: auto;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        color: #2ac664;
+    }
+    footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0.6px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-nav">
+                <img src="logo.png"alt="H3 Music Player" height="30px"; width="30px";>
+                <h1 class="logo" style="font-size: 1.5rem; ">H3 Mu$iC Pl@yer</h1>
+                <nav>    
+                    <ul>
+                        <li><a href="home1.html">Home</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="shop.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="welcome-page">
+        <video class="background-video" autoplay loop muted>
+            <source src="music_-_13097 (540p).mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <h1 class="letter-spacing-animation">Welcome to Music Player</h1>
+            <p class="color-change" style="font-weight: bold;">Listen to your favorite tracks anytime, anywhere with our versatile music player.</p>
+            <a href="login.html" class="btn">Tap to Tune in</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Music Player. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

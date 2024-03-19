@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H3 Mu$iC Pl@yer</title>
+    <link rel="icon" type="image"href="logo.png">
+    <script src="https://kit.fontawesome.com/1b657ccbc1.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100%;
+            height: 100vh;
+            background:black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .musicplayer{
+            background:linear-gradient(rgb(193, 160, 117),rgb(184, 169, 149));
+            width: 400px;
+            padding: 25px 35px;
+            text-align: center;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        nav .circle{
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            background: #fff;
+            color: rgb(240, 153, 39);
+            box-shadow: 0 5px 10px black;
+        }
+        .songimg{
+            width: 220px;
+            border-radius: 50%;
+            border: 8px solid #fff;
+            box-shadow: 0 10px 60px rgba(27, 27, 27, 0.22);
+        }
+        .musicplayer h1{
+            font-size: 20px;
+            font-weight: 400;
+            color: #333;
+            margin-top: 20px;
+        }
+        .musicplayer p{
+            font-size: 14px;
+            color: #333;
+
+        }
+        #progress{
+            -webkit-appearance:none;
+            width:100%;
+            height: 6px;
+            background: rgb(170, 138, 94);
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        #progress::-webkit-slider-thumb{
+            -webkit-appearance:none;
+            background: rgb(205, 191, 173);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: 8px solid #fff;
+            box-shadow: 0 5px 5px rgb(98, 75, 45);
+        }
+        .controls{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .controls div{
+            width: 60px;
+            height: 60px;
+            margin: 10px;
+            background: #fff;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: black;
+            box-shadow: 0 10px 20px rgba(255,26,26,0.22);
+            cursor: pointer;
+        }
+        .controls div:nth-child(2){
+            transform: scale(1.3);
+            background: rgb(179, 117, 35);
+            color:black ;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="musicplayer">
+        <nav>
+            <a href="00's.html"><div class="circle"><i class="fa-solid fa-angle-left"></i></div></a>
+        </nav>
+        <img src="ucha.jfif" alt="hass hass" class="songimg">
+        <h1>Uncha Lamba Kad</h1>
+        <p>Song by Anand Raaj Anand</p>
+        <audio src="Uncha Lamba Kad Welcome 128 Kbps.mp3" type="audio/mpeg" id="song">
+        </audio>
+        <input type="range" value="0" id="progress">
+        <div class="controls">
+            <a href="nagada.html"><div><i class="fa-solid fa-backward"></i></div></a>
+            <div onclick="playPause()"><i class="fa-solid fa-pause" id="ctrlIcon"></i></div>
+            <a href="soni.html"><div><i class="fa-solid fa-forward"></i></div></a>
+        </div>
+       </div>
+    </div>
+    <script>
+    let progress = document.getElementById("progress");
+    let song = document.getElementById("song");
+    let ctrlIcon = document.getElementById("ctrlIcon");
+
+    song.onloadedmetadata=function(){
+        progress.max = song.duration;
+        progress.value = song.currentTime;
+    }
+    function playPause(){
+        if  ( ctrlIcon.classList.contains("fa-pause")){
+            song.pause();
+            ctrlIcon.classList.remove("fa-pause");
+            ctrlIcon.classList.add("fa-play");
+        }
+        else{
+            song.play();
+            ctrlIcon.classList.remove("fa-play");
+            ctrlIcon.classList.add("fa-pause");
+        }
+    }
+    if(song.play()){
+        setInterval(()=>{
+            progress.value = song.currentTime;
+        },500);
+    }
+    progress.onchange= function(){
+        song.play()
+        song.currentTime=progress.value;
+        ctrlIcon.classList.remove("fa-play");
+        ctrlIcon.classList.add("fa-pause");
+    }
+
+    </script>
+</body>
+</html>
