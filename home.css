@@ -33,7 +33,21 @@ nav ul {
     list-style-type: none;
     display: flex;
 }
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 1.2rem; /* Adjust the font size for smaller screens */
+    }
 
+    nav ul {
+        flex-direction: column; /* Stack the navigation links vertically on smaller screens */
+        align-items: flex-start; /* Align the navigation links to the start */
+    }
+
+    nav ul li {
+        margin-right: 0; /* Remove the right margin for list items */
+        margin-bottom: 10px; /* Add bottom margin to separate list items */
+    }
+}
 nav ul li {
     margin-right: 20px;
 }
@@ -71,7 +85,7 @@ nav ul li a:hover {
         filter: hue-rotate(360deg);
     }
 }
-
+.songlist{width: 100%;}
 .songlist h1
 {
   text-align: center;
@@ -317,7 +331,7 @@ a{
 {
     .box1
 {
-    height: 50vh;
+    height: 60vh;
     background-color: rgb(65, 64, 64);
     color: black;
     display:inline;
@@ -359,7 +373,7 @@ a{
 {
     .box2
 {
-    height: 50vh;
+    height: 53vh;
     background-color: rgb(65, 64, 64);
     color: black;
     display:inline;
@@ -615,7 +629,83 @@ button:hover
     color: #080909;
     border: 2px solid black;
 }
-.new-mode{
-    background-color: #fff;
-    border:2px solid black;
+/* Add this to your CSS for styling the search bar */
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
+
+#search-input {
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+#search-button {
+    background-color: #2ac664; /* Choose your desired background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+    width: 5vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #1e8b48; /* Choose a darker shade for hover effect */
+}
+.playlist {
+    color: #ccc;
+    margin-top: 20px;
+}
+.playlist h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.playlist ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.playlist li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+.playlist li button {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.playlist li button:hover {
+    background-color: #e60000;
+}
+/* CSS for Add to Playlist button */
+.add-to-playlist-button {
+    font-size: 14px;
+    padding: 6px 5px;
+    border: none;
+    background-color: #2ac664; /* Your desired button color */
+    color: rgb(17, 16, 16);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 20%; /* Ensures button doesn't exceed container width */
+    box-sizing: border-box; /* Includes padding and border in button width */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .add-to-playlist-button {
+        font-size: 10px; /* Decrease font size for smaller screens */
+        padding: 4px 8px; /* Decrease padding for smaller screens */
+    }
+}
+
+
