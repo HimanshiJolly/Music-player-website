@@ -99,16 +99,42 @@
             background:rgb(156, 206, 188);
             color:black ;
         }
-        
+        .volume-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures volume slider and mute button are spaced evenly */
+    margin-top: 20px; /* Added margin-top */
+}
+
+/* Adjusted styles for volume slider */
+.volume-control input[type="range"] {
+    -webkit-appearance: none;
+    width: 100px;
+    height: 6px;
+    background: rgb(128, 189, 243);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px; /* Adjust this margin to add space */
+}
+
+/* Adjusted styles for mute button */
+#mute-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="new" style="display: flex;">
        <div class="musicplayer">
+        <div class="new" style="display: flex;">
         <nav>
             <a href="home1.html"><div class="circle"><i class="fa-solid fa-angle-left"></i></div></a>
         </nav>
         <img src="amor.jpeg" alt="hass hass" class="songimg">
+        </div>
         <h1>Mi Amor</h1>
         <p>Song by 40K, Sharn, and The Paul</p>
         <audio src="Mi-Amor-Sharn(PaglaSongs).mp3" type="audio/mpeg" id="song">
@@ -118,6 +144,17 @@
             <a href="softly.html"><div><i class="fa-solid fa-backward"></i></div></a>
             <div onclick="playPause()"><i class="fa-solid fa-pause" id="ctrlIcon"></i></div>
            <a href="kinni.html"><div><i class="fa-solid fa-forward"></i></div></a>
+        </div>
+        
+        <div class="volume-control">
+            <div>
+                <i class="fas fa-volume-down"></i>
+                <input type="range" value="100" min="0" max="100" step="1" id="volume-slider">
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div id="mute-button" onclick="muteUnmute()">
+                <i class="fas fa-volume-up"></i>
+            </div>
         </div>
        </div>
     </div>
@@ -153,7 +190,22 @@
         ctrlIcon.classList.remove("fa-play");
         ctrlIcon.classList.add("fa-pause");
     }
+    let volumeSlider = document.getElementById("volume-slider");
+let muteButton = document.getElementById("mute-button");
 
+volumeSlider.oninput = function () {
+    song.volume = volumeSlider.value / 100;
+};
+
+function muteUnmute() {
+    if (song.volume === 0) {
+        song.volume = volumeSlider.value / 100;
+        muteButton.innerHTML = '<i class="fas fa-volume-up"></i>';
+    } else {
+        song.volume = 0;
+        muteButton.innerHTML = '<i class="fas fa-volume-mute"></i>';
+    }
+}
     </script>
 </body>
 </html>
