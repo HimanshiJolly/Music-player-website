@@ -131,10 +131,11 @@
 <body>
     <div class="container">
        <div class="musicplayer">
+        <div class="divnew" style="display: flex;">
         <nav>
             <a href="home1.html"><div class="circle"><i class="fa-solid fa-angle-left"></i></div></a>
         </nav>
-        <img src="hass.jpeg" alt="hass hass" class="songimg">
+        <img src="hass.jpeg" alt="hass hass" class="songimg"></div>
         <h1>Hass Hass</h1>
         <p>Song by Diljit Dosanjh, Greg Kurstin, and Sia</p>
         <audio src="Hass Hass.mp3" type="audio/mpeg" id="song">
@@ -153,7 +154,7 @@
         <i class="fas fa-volume-up"></i>
     </div>
     <div id="mute-button" onclick="muteUnmute()">
-        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-volume-up"></i>
     </div>
 </div>
 
@@ -201,10 +202,10 @@ volumeSlider.oninput = function () {
 function muteUnmute() {
     if (song.volume === 0) {
         song.volume = volumeSlider.value / 100;
-        muteButton.innerHTML = '<i class="fas fa-volume-mute"></i>';
+        muteButton.innerHTML = '<i class="fas fa-volume-up"></i>';
     } else {
         song.volume = 0;
-        muteButton.innerHTML = '<i class="fas fa-volume-up"></i>';
+        muteButton.innerHTML = '<i class="fas fa-volume-mute"></i>';
     }
 }
 
