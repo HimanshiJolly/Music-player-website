@@ -5,58 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H3 Mu$iC Pl@yer</title>
     <link rel="icon" type="image"href="logo.png">
-    <header>
-      <div class="logo">
-       <img src="logo.png"alt="H3 Music Player" height="48px"; width="50px";>
-      </div>
-      <div class="nav">
-       <ul>
-           <li id="#home" style="background-color: rgb(165, 162, 162);"><a href="home1.html">HOME</a></li>
-           <li id="#library"><a href="library.html">LIBRARY</a></li>
-           <li id="artist"><a href="artist.html">ARTIST</a></li>
-           <li><a href="login.html">LOGIN</a></li>
-           <li id="#shop"><a href="shop.html">SHOP</a></li>
-       </ul>
-      </div>
-  </header>
+    
     <style>
       *{
         padding: 0;
         margin: 0;
       }
-      header{
-     display: flex;
-     justify-content: space-between;
-     padding: 0px 100px 0px 5px;
-    background-color: white;
-    height: 45px;
-    width: 91.6%;
-}
-
-.nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-    justify-content: space-between;
-    list-style-type: none;
-    cursor: pointer;
-    text-decoration: none;
-}
-.nav ul li a
-{
- text-decoration: none;
- color: black;
-}
-.nav ul li a:hover{
-    text-decoration: underline;
-    color: rgb(116, 85, 85);   
-}
-
+     
         body{
             background-color: black;
             color: white;
@@ -99,7 +54,7 @@
     }
         }
         .cards{
-          width: 200px;
+          width: 170px;
           background:linear-gradient(rgb(99, 75, 69),rgb(194, 103, 102));
           border-radius: 10px;
           margin:10px;
@@ -139,9 +94,66 @@
         color: #fff;
         transition: 1s;
        }
+       .container {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 18px 0px;
+    }
+    
+    .logo-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo {
+        font-size: 1.4rem;
+        margin-right: auto;
+    }
+    nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        color: #2ac664;
+    }
+
        </style>
 </head>
 <body>
+  <header>
+    <div class="container">
+        <div class="logo-nav">
+            <img src="logo.png"alt="H3 Music Player" height="30px"; width="30px";>
+            <h1 class="logo" style="font-size: 1.5rem; ">H3 Mu$iC Pl@yer</h1>
+            <nav>    
+                <ul>
+                    <li><a href="home1.html"style="color: #2ac664";>Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="shop.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
   <div class="container1">
    <img src="90.1.jpg" alt="error" class="img">
     <h1 style="font-size: 90px;">All Out 00's Hindi</h1>
