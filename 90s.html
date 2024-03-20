@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H3 Mu$iC Pl@yer</title>
     <link rel="icon" type="image"href="logo.png">
+    
     <style>
+      *{
+        padding: 0;
+        margin: 0;
+      }
+     
         body{
             background-color: black;
             color: white;
+            font-family: Arial, Helvetica, sans-serif;
         }
       .container1{
-         width: 101%;
+         width: 100.5%;
          margin-top: -8px;
-         background:linear-gradient(rgb(131, 131, 190),rgb(96, 96, 118),rgb(140, 140, 192));
+         background:linear-gradient(rgb(156, 136, 221),rgb(75, 87, 142),rgb(106, 114, 136));
          margin-left: -6px;
          display: flex;
          flex-direction: row;
@@ -22,95 +29,230 @@
         .container1 .img{
           width: 300px;
         }
-        .container2
-        {
-          min-height: 40vh;
-         background:linear-gradient(rgb(131, 131, 190),rgb(96, 96, 118),rgb(140, 140, 192));;
-         color: white;
-         display: flex;
-         width: 80%;
-         margin: 25px auto;
-         border-radius: 12px;
-         border: 2px solid white;
-         padding: 24px;
-         position:relative;
-         }
-        .songlist h1
-        {
-           text-align: center;
+       
+        .text-wrap
+{ display: flex;
+  justify-content: flex-start ;
+  background: linear-gradient(rgb(62, 53, 50),rgb(142, 130, 220));
+  overflow: hidden;
+}
+       .container1 p{
+          color: black;
+    white-space:nowrap;
+    padding: 0 4rem;
+    letter-spacing: 0.7px ;
+    animation: move-rtl 6000ms linear infinite;
+}
+@keyframes move-rtl {
+    0%
+    {
+        transform: translateX(0);
+    }
+    100%
+    {
+        transform: translateX(-100%);
+    }
         }
-       .icons
-        {
-         margin-top: 15px;
-         font-size: 39px;
-         cursor: pointer;
+        .cards{
+          width: 170px;
+          background:linear-gradient(rgb(99, 75, 69),rgb(94, 126, 176));
+          border-radius: 10px;
+          margin:10px;
+          display: inline-block;
+          padding: 10px;
         }
-        .songitem1
+        .cards:hover{
+          box-shadow: 4px 4 px 7px white;
+          transition: 0.5s;
+        } 
+        .image img
         {
-          height: 50px;
-         display: flex;
-          background-color:#fff;
           width: 100%;
-         color: rgb(23, 22, 22);
-          margin: 12px 0;
-          justify-content: space-between;
-         align-items: center;
-          border-radius: 34px;
-         cursor: pointer;
+          border-top-right-radius:10px;
+          border-top-left-radius: 10px;
         }
-        .songitem1 img
+        .title
         {
-         width:50px;
-         margin: 0 23px;
-          border-radius: 34px;
+          text-align: center;
+          padding: 5px;
         }
-         .songitem1 a 
-        {
-          text-decoration: none;
-         color: rgb(10, 10, 10);
+        .description{
+          padding: 5px;
+          text-align: center;
         }
-        .songitem1 a:hover
-        {
-         text-decoration: underline;
-         }
-        .timestamp
-        {
-          margin: 0 23px;
-        }
-    </style>
+        button
+        {margin-bottom: 15px;
+        margin-top: 15px;
+        width: 100px;
+       background-color: #fff;
+       border: 1px solid black;
+       padding: 10px;
+       border-radius: 15px;
+       cursor: pointer;}
+       button:hover{
+        background-color: black;
+        color: #fff;
+        transition: 1s;
+       }
+       .container {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 18px 0px;
+    }
+    
+    .logo-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo {
+        font-size: 1.4rem;
+        margin-right: auto;
+    }
+    nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        color: #2ac664;
+    }
+
+       </style>
 </head>
 <body>
-    <div class="container1">
-        <img src="90.2.jpg" alt="error" class="img">
-        <h1 style="font-size: 90px;">90s Swagger</h1>
-        <p style="color: rgb(227, 222, 222)">Everything from cheesy floor-fillers to big beat bangers.Cover:Kuch Kuch Hota Hai</p>
-    </div>
-    <div class="container2">
-        <div class="songlist">
-            <div class="songs">
-                <div class="songitem1">
-                      <img src="koi.jfif" alt="1">
-                      <span><a href="koi.html">Koi Mil Gaya</a></span>
-                      <span class="songlistplay"><span class="timestamp">07.18<ion-icon name="play-circle-sharp"></ion-icon></span></span>
-                </div>
-                <div class="songitem1">
-                      <img src="muqabala.jfif" alt="1">
-                      <span><a href="muqabala.html">Muqabala Muqabala</a></span>
-                      <span class="songlistplay"><span class="timestamp">02:24<ion-icon name="play-circle-sharp"></ion-icon></span></span>
-                </div>
-              <div class="songitem1">
-                    <img src="sona.jfif" alt="1">
-                    <span><a href="sona.html">Sona Kitna Sona Hai</a></span>
-                    <span class="songlistplay"><span class="timestamp">04:49<ion-icon name="play-circle-sharp"></ion-icon></span></span>
-               </div>
-               <div class="songitem1">
-                    <img src="le gayi.jfif" alt="1">
-                    <span><a href="le.html">Le Gayi</a></span>
-                    <span class="songlistplay"><span class="timestamp">05:42<ion-icon name="play-circle-sharp"></ion-icon></span></span> 
-                </div>
-            </div>
+  <header>
+    <div class="container">
+        <div class="logo-nav">
+            <img src="logo.png"alt="H3 Music Player" height="30px"; width="30px";>
+            <h1 class="logo" style="font-size: 1.5rem; ">H3 Mu$iC Pl@yer</h1>
+            <nav>    
+                <ul>
+                    <li><a href="home1.html"style="color: #2ac664";>Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="shop.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
-   
-  <footer><a href="home1.html" style="text-decoration: none;color: #fff;"><h1><<</h1><a</footer>
+</header>
+  <div class="container1">
+   <img src="90.2.jpg" alt="error" class="img">
+    <h1 style="font-size: 90px;">90's Swagger</h1>
+     <div class="text-wrap">
+        <p style="color: rgb(242, 234, 234)">Bollywood songs that ruled hearts in tha Y2K decade.Cover -Jab We Met</p>
+        <p style="color: rgb(200, 195, 195)">Bollywood songs that ruled hearts in tha Y2K decade.Cover -Jab We Met</p>
+        <p style="color: rgb(232, 219, 219)">Bollywood songs that ruled hearts in tha Y2K decade.Cover -Jab We Met</p>
+       </div>
+    </div>
+    <div class="main">
+  <div class="cards">
+    <div class="image"><img src="ucha2.jpg"></div>
+    <div class="title"><h3>Ucha Lamba Kad</h3></div>
+    <div class="description">
+      <p>Song by Anand Raaj Anand</p>
+      <h5>04.40</h5>
+      <a href="ucha.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="image"><img src="soni2.jpg"></div>
+    <div class="title"><h3>Soni De Nakhre</h3></div>
+    <div class="description">
+      <p>Song by Labh Janjua, Sajid–Wajid, and Sneha Pant</p>
+      <h5>04.21</h5>
+      <a href="soni.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="image"><img src="nagada2.jfif"></div>
+    <div class="title"><h3>Nagada Nagada</h3></div>
+    <div class="description">
+      <p>Song by Javed Ali and Sonu Nigam</p>
+      <h5>03.48</h5>
+      <a href="nagada.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="image"><img src="haan2.jpg"></div>
+    <div class="title"><h3>Haan Tu Hai</h3></div>
+    <div class="description">
+      <p>Song by Pritam,KK</p>
+      <h5>05.25</h5>
+      <a href="haan.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="image"><img src="ajab2.jpg"></div>
+    <div class="title"><h3>Ajab Si</h3></div>
+    <div class="description">
+      <p>Song by KK</p>
+      <h5>04:02</h5>
+      <a href="Ajab.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="image"><img src="no entry2.jpg"></div>
+    <div class="title"><h3>No Entry:Ishq Di Galli vich</h3></div>
+    <div class="description">
+      <p>Song by Alisha Chinai and Sonu Nigam</p>
+      <h5>06.09</h5>
+      <a href="noentry.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="image"><img src="teri.jpg"></div>
+    <div class="title"><h2>Teri Ore</h2></div>
+    <div class="description">
+      <p>Song by Rahat Fateh Ali Khan and Shreya Ghoshal</p>
+      <h5>05.37</h5>
+      <a href="teri.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="image"><img src="guitar.jpg"></div>
+    <div class="title"><h3>Dil Mein Baji Guitar</h3></div>
+    <div class="description">
+      <p>Song by Mika Singh,Pritam</p>
+      <h5>04:25</h5>
+      <a href="guitar.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="image"><img src="tu aashiqi.jpg"></div>
+    <div class="title"><h3>Tu Aashiqui Hai</h3></div>
+    <div class="description">
+      <p>Song by Alisha Chinai and Sonu Nigam</p>
+      <h5>06.10</h5>
+      <a href="tu aashiqui.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="image"><img src="teri.jpg"></div>
+    <div class="title"><h2>Jee Karda</h2></div>
+    <div class="description">
+      <p>Song by Labh Janjua, Pritam Chakraborty, and Suzanne D'Mello</p>
+      <h5>04.49</h5>
+      <a href="jee.html"><button>Play Now</button></a>
+    </div>
+  </div>
+  </div>
 </body>
